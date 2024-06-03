@@ -5,6 +5,7 @@ let mainCont = document.querySelector(".main-cont");
 let textareaCont = document.querySelector(".textarea-cont");
 let allPriorityColors = document.querySelectorAll(".priority-color");
 let toolBoxColors = document.querySelectorAll(".color");
+let createItem = document.getElementById("create-ticket")
 
 let colors = ["lightpink", "lightblue", "lightgreen", "black"];
 let modalPriorityColor = colors[colors.length - 1];
@@ -89,13 +90,14 @@ removeBtn.addEventListener("click", (e) => {
 })
 
 
-modalCont.addEventListener("keydown", (e) => {
+createItem.addEventListener('click', (e) => {
     let key = e.key;
-    if (key === "Shift") {
+    console.log("Enter");
+    // if (key === "Shift") {
         createTicket(modalPriorityColor, textareaCont.value);
         addFlag = false;
         setModalToDefault();
-    }
+    // }
 })
 
 function createTicket(ticketColor, ticketTask, ticketID) {

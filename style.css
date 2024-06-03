@@ -100,7 +100,8 @@ body {
     width: 55%;
 }
 .border {
-    border: 5px solid #d1d8e0;
+    border: 0.6rem solid #e9d70bcd ;
+    border-radius: 0.6rem;
 }
 
 .ticket-cont {
@@ -178,4 +179,23 @@ body {
         margin-left: 2rem;
         border-radius: 2px;
     }
+}
+.submit-btn{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: #f7eb00;
+}
+.lightpink:hover,.lightblue:hover, .lightgreen:hover, .black:hover{
+    cursor: pointer;
+}
+.delete-info{
+    color: rgba(212, 201, 40, 0.857);
+    font-size: larger;
+    text-decoration: solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font:900
+
 }
